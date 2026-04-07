@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="80" viewBox="0 0 120 80">
+  <rect width="120" height="80" rx="10" fill="#161616" stroke="#f5b800" stroke-width="1.5"/>
+  <!-- Bill shadow -->
+  <rect x="18" y="22" width="88" height="46" rx="5" fill="#111" transform="translate(3,3)"/>
+  <!-- Bill body -->
+  <rect x="18" y="22" width="88" height="46" rx="5" fill="#1a2e1a" stroke="#2d5a2d" stroke-width="1.5"/>
+  <!-- Bill inner border -->
+  <rect x="23" y="27" width="78" height="36" rx="3" fill="none" stroke="#2d5a2d" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center circle -->
+  <circle cx="60" cy="45" r="12" fill="none" stroke="#f5b800" stroke-width="1.5" opacity="0.6"/>
+  <!-- Dollar/Real sign -->
+  <text x="60" y="50" font-family="Arial Black" font-size="16" font-weight="900" fill="#f5b800" text-anchor="middle">R$</text>
+  <!-- Corner decorations -->
+  <text x="26" y="35" font-family="Arial" font-size="8" fill="#f5b800" opacity="0.7">50</text>
+  <text x="88" y="35" font-family="Arial" font-size="8" fill="#f5b800" opacity="0.7" text-anchor="end">50</text>
+  <text x="26" y="60" font-family="Arial" font-size="8" fill="#f5b800" opacity="0.7">50</text>
+  <text x="88" y="60" font-family="Arial" font-size="8" fill="#f5b800" opacity="0.7" text-anchor="end">50</text>
+  <text x="60" y="74" font-family="Arial" font-size="8" fill="#b3b3b3" text-anchor="middle" letter-spacing="1">DINHEIRO</text>
+</svg>

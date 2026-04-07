@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="80" viewBox="0 0 120 80">
+  <rect width="120" height="80" rx="10" fill="#161616" stroke="#ffffff" stroke-width="1.5"/>
+  <!-- Card body -->
+  <rect x="12" y="16" width="96" height="62" rx="7" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <!-- Top color band -->
+  <rect x="12" y="16" width="96" height="18" rx="7" fill="#222"/>
+  <rect x="12" y="25" width="96" height="9" fill="#222"/>
+  <!-- Chip -->
+  <rect x="20" y="42" width="22" height="16" rx="3" fill="#ffffff" opacity="0.85"/>
+  <line x1="20" y1="48" x2="42" y2="48" stroke="#aaa" stroke-width="1"/>
+  <line x1="20" y1="52" x2="42" y2="52" stroke="#aaa" stroke-width="1"/>
+  <line x1="31" y1="42" x2="31" y2="58" stroke="#aaa" stroke-width="1"/>
+  <!-- Contactless symbol -->
+  <path d="M52,50 Q56,46 56,50 Q56,54 52,50" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+  <path d="M55,50 Q61,44 61,50 Q61,56 55,50" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <path d="M58,50 Q66,42 66,50 Q66,58 58,50" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3"/>
+  <!-- Card number dots -->
+  <circle cx="72" cy="56" r="2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="78" cy="56" r="2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="84" cy="56" r="2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="90" cy="56" r="2" fill="#ffffff" opacity="0.5"/>
+  <text x="60" y="74" font-family="Arial" font-size="8" fill="#b3b3b3" text-anchor="middle" letter-spacing="1">DÉBITO</text>
+</svg>

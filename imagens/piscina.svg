@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#0a0a0a"/>
+  <!-- Pool water -->
+  <rect x="60" y="220" width="480" height="130" rx="5" fill="#0d1a2e"/>
+  <!-- Lane dividers -->
+  <line x1="60" y1="260" x2="540" y2="260" stroke="#f5b800" stroke-width="2" stroke-dasharray="15,10" opacity="0.6"/>
+  <line x1="60" y1="300" x2="540" y2="300" stroke="#f5b800" stroke-width="2" stroke-dasharray="15,10" opacity="0.6"/>
+  <!-- Water wave effect -->
+  <path d="M60 230 Q120 220 180 230 Q240 240 300 230 Q360 220 420 230 Q480 240 540 230" fill="none" stroke="#1a3a5c" stroke-width="3"/>
+  <path d="M60 245 Q120 235 180 245 Q240 255 300 245 Q360 235 420 245 Q480 255 540 245" fill="none" stroke="#1a3a5c" stroke-width="2" opacity="0.7"/>
+  <!-- Pool edge -->
+  <rect x="55" y="215" width="490" height="12" rx="3" fill="#161616" stroke="#f5b800" stroke-width="2"/>
+  <!-- Swimmer silhouette -->
+  <circle cx="200" cy="238" r="18" fill="#f5b800"/>
+  <!-- Body horizontal -->
+  <ellipse cx="260" cy="245" rx="55" ry="14" fill="#f5b800"/>
+  <!-- Arm stroke -->
+  <line x1="200" y1="238" x2="155" y2="220" stroke="#f5b800" stroke-width="10" stroke-linecap="round"/>
+  <line x1="200" y1="238" x2="165" y2="255" stroke="#f5b800" stroke-width="10" stroke-linecap="round"/>
+  <!-- Legs kick -->
+  <line x1="315" y1="245" x2="345" y2="232" stroke="#f5b800" stroke-width="10" stroke-linecap="round"/>
+  <line x1="315" y1="245" x2="348" y2="258" stroke="#f5b800" stroke-width="10" stroke-linecap="round"/>
+  <!-- Splash -->
+  <line x1="155" y1="220" x2="140" y2="210" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  <line x1="150" y1="225" x2="133" y2="220" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+  <line x1="158" y1="215" x2="148" y2="203" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+  <!-- Pool lane numbers -->
+  <text x="90" y="212" font-family="Arial" font-size="12" fill="#f5b800" text-anchor="middle">1</text>
+  <text x="90" y="258" font-family="Arial" font-size="12" fill="#f5b800" text-anchor="middle">2</text>
+  <text x="90" y="298" font-family="Arial" font-size="12" fill="#f5b800" text-anchor="middle">3</text>
+  <!-- Diving board -->
+  <rect x="490" y="195" width="60" height="8" rx="3" fill="#f5b800"/>
+  <rect x="530" y="170" width="10" height="35" rx="3" fill="#ffffff"/>
+  <!-- Label -->
+  <text x="300" y="390" font-family="Arial Black" font-size="26" font-weight="900" fill="#f5b800" text-anchor="middle" letter-spacing="3">PISCINA OLÍMPICA</text>
+</svg>
