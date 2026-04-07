@@ -87,7 +87,7 @@ if (hero) {
    REVEAL ON SCROLL
    ===================== */
 const revealEls = document.querySelectorAll(
-    '.plano-card, .galeria-item, .info-contato, .pagamento-box, .tag-pagamento, .section-title'
+    '.plano-flip, .galeria-item, .info-contato, .pagamento-box, .section-title'
 );
 revealEls.forEach(el => el.classList.add('reveal'));
 
@@ -104,6 +104,17 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 
 revealEls.forEach(el => observer.observe(el));
+
+/* =====================
+   FLIP DOS PLANOS (CLICK)
+   ===================== */
+document.querySelectorAll('.plano-flip').forEach(card => {
+    card.addEventListener('click', e => {
+        // não vira se clicar no botão Assinar
+        if (e.target.closest('.btn')) return;
+        card.classList.toggle('flipped');
+    });
+});
 
 /* =====================
    CONTADOR ANIMADO NOS PREÇOS
@@ -123,11 +134,19 @@ const priceObserver = new IntersectionObserver(entries => {
         if (entry.isIntersecting) {
             const el = entry.target;
             const value = parseInt(el.dataset.value);
-            animateCount(el, value);
+            // só anima quando o card for virado
+            const card = el.closest('.plano-flip');
+            if (card) {
+                card.addEventListener('click', () => {
+                    if (card.classList.contains('flipped') && el.textContent === 'R$ 0') {
+                        animateCount(el, value);
+                    }
+                }, { once: true });
+            }
             priceObserver.unobserve(el);
         }
     });
-}, { threshold: 0.5 });
+}, { threshold: 0.1 });
 
 document.querySelectorAll('.preco').forEach(el => {
     const match = el.textContent.match(/\d+/);
